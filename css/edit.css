@@ -1,0 +1,15 @@
+.ppick,.pdel{display:none}
+.promos.editing .ppick{position:absolute;inset:0;z-index:1;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.45);color:#fff;font-weight:800;font-size:15px;border:0;font-family:inherit;cursor:pointer;width:100%}
+.promos.editing .pdel{position:absolute;top:14px;right:14px;z-index:3;display:block;border:0;background:#111;color:#fff;border-radius:10px;padding:9px 13px;font-weight:800;font-size:12px;font-family:inherit;cursor:pointer}
+.promos.editing .pdel:hover{background:#c0392b}
+.promos.editing [data-f]{outline:2px dashed #ff5a00;outline-offset:3px;border-radius:5px;cursor:text}
+.promos.editing .pold:empty{display:block;min-height:20px}
+.promos.editing .pold:empty:before{content:"preço antigo (opcional)";color:#bbb;text-decoration:none}
+.promos.editing .pbtn{pointer-events:none}
+.ptools{display:none;margin-bottom:20px;padding:16px 18px;border-radius:16px;background:#fff7f0;color:#333;border:2px dashed #ff8a3d;font-size:14px}
+.promos.editing .ptools{display:block}
+.ptools .tbtn{border:1px solid #ddd;background:#fff;color:#111;padding:9px 14px;border-radius:10px;font-weight:700;font-size:13px;font-family:inherit;cursor:pointer;margin:10px 8px 0 0}
+.ptools .tbtn:hover{border-color:var(--orange);color:var(--orange)}
+.ptools .tbtn.main{background:#111;color:#fff;border-color:#111}
+.pstatus{display:inline-block;margin-left:6px;color:#0a7a35;font-weight:700;font-size:13px}
+.promos.dim .promo-grid{opacity:.55}

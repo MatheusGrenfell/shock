@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Shock Burger — hambúrgueres, porções, combos e toppings. Peça pelo WhatsApp.">
+  <title>Shock Burger | Peça pelo WhatsApp</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/data.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="#">SHOCK <span>BURGER</span> ⚡</a>
+    <nav class="navlinks">
+      <a href="#promocoes" id="navPromo" hidden>Promoções</a><a href="#burgers">Burgers</a><a href="#porcoes">Porções</a><a href="#combos">Combos</a><a href="#toppings">Toppings</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="eyebrow">⚡ Delivery • 18:00 às 00:00 • Exceto terça-feira</div>
+      <h1>SEU LANCHE.<br><span>SUA ESCOLHA.</span></h1>
+      <p>Escolha seu hambúrguer, porção, combo ou topping. Clique em <b>pedir</b> e o WhatsApp já abre com o seu pedido preenchido.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#burgers">🍔 VER CARDÁPIO</a>
+        <button class="btn btn-secondary" data-wa="Olá! Quero fazer um pedido na Shock Burger. Pode me enviar as opções?">💬 FALAR NO WHATSAPP</button>
+      </div>
+      <div class="notice"><span>🛵 <b>Somente delivery</b></span><span>📍 Consulte o frete para sua região</span></div>
+    </div>
+  </section>
+
+  <section id="promocoes" class="promos" hidden>
+    <div class="container">
+      <div class="section-head">
+        <div><div class="tag" id="promoTag">Ofertas</div><h2 class="section-title">PRO<span>MOÇÕES</span></h2></div>
+        <p class="section-sub">Ofertas por tempo limitado. Clique em pedir e o WhatsApp abre com a promoção já preenchida.</p>
+      </div>
+      <div class="promo-grid" id="promo-grid"></div>
+    </div>
+  </section>
+
+  <section id="burgers">
+    <div class="container">
+      <div class="section-head">
+        <div><div class="tag">Cardápio 01</div><h2 class="section-title">BUR<span>GERS</span></h2></div>
+        <p class="section-sub">Clique no lanche que deseja e o pedido será enviado diretamente para o WhatsApp.</p>
+      </div>
+      <div class="grid" id="burger-grid"></div>
+    </div>
+  </section>
+
+  <section id="porcoes">
+    <div class="container">
+      <div class="section-head">
+        <div><div class="tag">Cardápio 02</div><h2 class="section-title">BATATAS <span>&amp;</span> PORÇÕES</h2></div>
+      </div>
+      <div class="grid" id="porcao-grid"></div>
+    </div>
+  </section>
+
+  <section id="combos">
+    <div class="container">
+      <div class="section-head">
+        <div><div class="tag">Cardápio 03</div><h2 class="section-title">COM<span>BOS</span> &amp; CAIXAS</h2></div>
+      </div>
+      <div class="grid wide-grid" id="combo-grid"></div>
+    </div>
+  </section>
+
+  <section id="toppings">
+    <div class="container">
+      <div class="section-head">
+        <div><div class="tag">Cardápio 04</div><h2 class="section-title">TOP<span>PINGS</span></h2></div>
+        <p class="section-sub">Adicione proteína, queijo, vegetais, molhos, cebolas especiais ou bebida.</p>
+      </div>
+      <div class="grid" id="topping-grid"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="cta">
+        <div>
+          <h2>BATEU A FOME?<br><span class="accent">CHAMA A SHOCK.</span></h2>
+          <p>Faça seu pedido pelo WhatsApp e consulte o frete para sua região.</p>
+        </div>
+        <button class="btn btn-primary" data-wa="Olá! Quero fazer um pedido na Shock Burger. Meu endereço é: ">⚡ PEDIR AGORA</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<a class="float-wa" href="#" data-wa="Olá! Quero fazer um pedido na Shock Burger." aria-label="Pedir pelo WhatsApp">☏</a>
+<div class="toast" id="toast" role="status">Abrindo WhatsApp...</div>
+
+<footer>
+  <div class="container">SHOCK BURGER ⚡ • Delivery • 18:00 às 00:00 • Exceto terça-feira</div>
+</footer>
+</body>
+</html>
